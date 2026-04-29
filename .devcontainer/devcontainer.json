@@ -29,5 +29,10 @@
 	},
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	"remoteUser": "root"
+	"remoteUser": "root",
+
+	"mounts": [
+    "source=${localWorkspaceFolderBasename}-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume",
+		"source=${localWorkspaceFolderBasename}-.nuxt,target=${containerWorkspaceFolder}/.nuxt,type=volume"
+	]
 }
