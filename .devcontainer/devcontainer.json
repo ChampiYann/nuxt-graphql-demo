@@ -16,7 +16,8 @@
 	],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "git config --global --add safe.directory /workspaces/cbs-nuxt",
+	"postCreateCommand": "npm install",
+	"postStartCommand": "git config --global --add safe.directory /workspaces/cbs-nuxt",
 
 	// Configure tool-specific properties.
 	"customizations": {
