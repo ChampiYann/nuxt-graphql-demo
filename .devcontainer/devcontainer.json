@@ -33,6 +33,7 @@
 
 	"mounts": [
     "source=${localWorkspaceFolderBasename}-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume",
-		"source=${localWorkspaceFolderBasename}-.nuxt,target=${containerWorkspaceFolder}/.nuxt,type=volume"
+		"source=${localWorkspaceFolderBasename}-.nuxt,target=${containerWorkspaceFolder}/.nuxt,type=volume",
+		"source=${localEnv:USERPROFILE}\\.azure,target=/root/.azure,type=bind,consistency=cached"
 	]
 }
