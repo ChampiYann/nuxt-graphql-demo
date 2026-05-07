@@ -22,7 +22,7 @@ const { data, error } = await useAsyncQuery(query);
   <p>Here are some of the articles in Sitecore.</p>
   <section>
     <div v-for="article in data?.item.children.results" :key="article.id">
-      <NuxtLink  :to="`/content/${article.id}`">
+      <NuxtLink :to="`/content/${article.id}`">
         <h2>{{ article?.name }}</h2>
       </NuxtLink>
     </div>

@@ -10,9 +10,6 @@ const query = gql`
 			name
 			jsonValue
 		}
-		parent {
-			id
-		}
 		template {
 			id
 		}
