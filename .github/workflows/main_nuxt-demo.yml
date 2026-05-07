@@ -35,7 +35,7 @@ jobs:
           name: node-app
           path: |
             .
-            .output
+            ./.output
 
   deploy:
     runs-on: ubuntu-latest
