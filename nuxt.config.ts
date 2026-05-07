@@ -4,13 +4,15 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/apollo'],
   runtimeConfig: {
-    githubToken: ''
+    sitecoreToken: ''
   },
   apollo: {
     clients: {
       default: {
-        tokenName: 'github-token',
-        httpEndpoint: 'https://api.github.com/graphql'
+        authHeader: 'sc_apikey',
+        authType: null,
+        tokenName: 'sitecoreToken',
+        httpEndpoint: 'https://sitecore-archi-advies-single.azurewebsites.net/sitecore/api/graph/edge'
       }
     }
   },
